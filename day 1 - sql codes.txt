@@ -1,0 +1,19 @@
+-- SQLite
+SELECT * From books LIMIT 5; 
+SELECT title, rating FROM books;
+SELECT title, rating FROM books
+ORDER BY rating DESC;
+SELECT title, rating FROM books
+ORDER BY rating DESC LIMIT 5;
+SELECT title, year, genre FROM books;
+SELECT title, year, genre FROM books WHERE genre = 'Memoir';
+SELECT title, year, genre FROM books WHERE genre = 'Memoir' ORDER BY year DESC;
+SELECT title FROM books
+WHERE title LIKE '%patient%';
+SELECT title FROM books
+WHERE title LIKE '%patient%'
+   OR title LIKE '%habits%';
+
+
+
+
